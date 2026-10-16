@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★ 的學習歷程與個人品牌 | 高中日常玩成專案</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        oat: '#FAF8F5',
+                        navy: {
+                            800: '#1E293B',
+                            900: '#0F172A',
+                        },
+                        accent: {
+                            500: '#F97316', // 亮橘色點綴
+                            600: '#EA580C',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="top" class="bg-oat text-navy-900 font-sans antialiased selection:bg-accent-500 selection:text-white border-t-4 border-accent-500">
+
+    <!-- 導覽列 Navbar -->
+    <header class="sticky top-0 z-50 bg-oat/90 backdrop-blur-md border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#top" class="font-black text-xl tracking-tight text-navy-900 flex items-center gap-2">
+                <span class="bg-accent-500 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold shadow-sm">★</span>
+                <span>★ 的學習基地</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-accent-600 transition">關於我</a>
+                <a href="#projects" class="hover:text-accent-600 transition">核心成果</a>
+                <a href="#peers" class="hover:text-accent-600 transition">給同儕的話</a>
+                <a href="#testimonials" class="hover:text-accent-600 transition">學弟妹見證</a>
+            </nav>
+            <a href="https://discord.gg/highschool-study-star" target="_blank" rel="noopener noreferrer" class="bg-navy-900 hover:bg-navy-800 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm hover:shadow">
+                <i class="fa-brands font-normal fa-discord mr-1.5"></i>加入 Discord
+            </a>
+        </div>
+    </header>
+
+    <main class="space-y-20 md:space-y-28 py-8 md:py-16">
+
+        <!-- 1. Hero Section (首屏) -->
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-8 sm:p-12 md:p-16 border border-slate-200/80 shadow-xl shadow-slate-200/40 relative overflow-hidden">
+                <!-- 背景裝飾點綴 -->
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-10 -top-10 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="max-w-3xl relative z-10 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-100/80 text-accent-600 text-xs sm:text-sm font-bold">
+                        <span class="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
+                        高三生 ‧ 番茄鐘筆記實踐者 ‧ 校際活動總召
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl font-black text-navy-900 leading-tight tracking-tight">
+                        拒絕死背！<br>把高中日常當成<span class="text-accent-600 underline decoration-accent-500/30 underline-offset-8">熱血專案</span>來玩🔥
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
+                        嗨，我是 <strong class="text-navy-900 font-bold">★</strong>！從高一段考墊底到找到適合自己的「番茄鐘與 Notion 複習法」，再到從零帶領社團辦成 200 人全校成果展。高中不該只有倒數計時與壓力，這裡是我三年跌倒又站起來的經驗武器庫！
+                    </p>
+
+                    <!-- 行動按鈕 Group -->
+                    <div class="pt-4 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="https://star-learning.notion.site/HighSchool-Notes-Template-2026" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-accent-500/20 transition transform active:scale-95">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            免費索取高一二複習筆記
+                        </a>
+                        <a href="https://discord.gg/highschool-study-star" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold px-6 py-3.5 rounded-xl transition">
+                            <i class="fa-brands fa-discord text-indigo-600"></i>
+                            加入高中讀書交流群
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 快速數據標籤卡片 -->
+                <div class="mt-10 pt-8 border-t border-slate-100 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                    <div class="p-3 rounded-2xl bg-slate-50">
+                        <div class="text-2xl font-black text-navy-900">3.5k+</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">筆記下載次數</div>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-50">
+                        <div class="text-2xl font-black text-navy-900">200+</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">跨校舞會參與人數</div>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-50">
+                        <div class="text-2xl font-black text-navy-900">100%</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">自主學習計畫特優</div>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-50">
+                        <div class="text-2xl font-black text-navy-900">800+</div>
+                        <div class="text-xs text-slate-500 font-medium mt-1">Discord 考前戰友</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 關於我 (About Me) -->
+        <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-black text-navy-900">課本沒教，但我拼命闖出來的事 🚀</h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">不打官腔、不誇大，這是我高中三年最真實的成長軌跡。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- 亮點卡片 1 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5">📈</div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">段考逆襲歷程</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        高一段考曾經慘跌到校排墊底。後來拒絕熬夜盲目死背，改用「錯題歸納庫 ＋ Notion 時間塊管裡」，在半年內把類組排名拉回前 5%，證明方法比死讀書更重要。
+                    </p>
+                </div>
+
+                <!-- 亮點卡片 2 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5">💃</div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">200 人校際舞會總召</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        從零組建 12 人幹部團隊，包辦企劃撰寫、商家拉贊助到活動控場。最後吸引超過 200 位跨校高中生參加，達到 98% 滿意度且活動預算零虧損！
+                    </p>
+                </div>
+
+                <!-- 亮點卡片 3 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5">💻</div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">自主學習計畫特優</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        利用每週自主學習時間自學 Python 與網頁前端，打造出適合高中生的「考前倒數與選課管理小工具」，成功獲得校內自主學習成果展特優肯定。
+                    </p>
+                </div>
+
+                <!-- 亮點卡片 4 -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center text-xl font-bold mb-5">🤝</div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-2">讀書社群發起人</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        相信「一個人走得快，一群人走得遠」。創立高中生讀書 Discord 群組，陪伴超過 800 位同儕在深夜一起開麥 K 書、互相解答題目，告別孤軍奮戰。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 三大核心主題 / 成果卡片 (Projects & Services) -->
+        <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-accent-600 font-bold text-xs uppercase tracking-widest">Projects & Resources</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-navy-900 mt-1">精選項目與開源資源 📦</h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">無私分享！這些都是我實測有效、能直接帶走的工具與攻略。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 卡片 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition group">
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-accent-600 bg-orange-50 inline-block px-3 py-1 rounded-full mb-3">數位工具</div>
+                        <h3 class="text-xl font-bold text-navy-900 group-hover:text-accent-600 transition">① 高效 Notion 數位筆記模板</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            內建間隔重複複習提醒、進度追蹤看板與錯題標籤庫。拯救無頭蒼蠅式的盲目刷題，讓學測複習變得井然有序。
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://star-learning.notion.site/Notion-Study-Template-2026" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-500 text-white font-bold py-2.5 rounded-xl text-sm transition">
+                            <i class="fa-solid fa-download"></i> 免費複製 Notion 模板
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 卡片 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition group">
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-blue-600 bg-blue-50 inline-block px-3 py-1 rounded-full mb-3">社團指南</div>
+                        <h3 class="text-xl font-bold text-navy-900 group-hover:text-accent-600 transition">② 大型社團活動籌備全攻略</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            包含企劃書撰寫範本、贊助廠商開口話術、當日 Run 標單範本。讓你第一次當幹部/總召就不踩雷，輕鬆帶領團隊。
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://star-learning.notion.site/Club-Event-Guidebook" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-500 text-white font-bold py-2.5 rounded-xl text-sm transition">
+                            <i class="fa-solid fa-book-open"></i> 閱讀完整指南
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 卡片 3 -->
+                <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col justify-between shadow-sm hover:shadow-md transition group">
+                    <div class="p-6">
+                        <div class="text-xs font-bold text-emerald-600 bg-emerald-50 inline-block px-3 py-1 rounded-full mb-3">歷程檔案</div>
+                        <h3 class="text-xl font-bold text-navy-900 group-hover:text-accent-600 transition">③ 自主學習計畫實作與備審</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+                            如何將「興趣」轉化為「18 週具體成果報告」？完整展示我的自主學習心路歷程、簡報架構與教授最想看的亮點呈現方式。
+                        </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="https://star-learning.notion.site/Self-Directed-Learning-Portfolio" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-accent-500 text-white font-bold py-2.5 rounded-xl text-sm transition">
+                            <i class="fa-solid fa-eye"></i> 查看學習歷程範本
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 寫給同儕的一段話 -->
+        <section id="peers" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-navy-900 to-slate-800 text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-xl">
+                <!-- 裝飾微光 -->
+                <div class="absolute top-0 right-0 w-32 h-32 bg-accent-500/20 rounded-full blur-2xl"></div>
+
+                <div class="relative z-10 space-y-4">
+                    <div class="flex items-center gap-2 text-accent-500 font-bold text-sm">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>寫給正在讀這封信的你</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black">「倒數數字很可怕，但你絕不是一個人在戰鬥。」</h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-normal">
+                        高三這年，是不是經常看著模擬考成績單懷疑自己？或是看著空白的自主學習計畫覺得迷惘？<br><br>
+                        相信我，我也曾坐在麥當勞 K 書中心盯著考卷發呆，覺得自己什麼都做不好。但高中生活絕不只是考卷上的分數，每一個你嘗試解答的難題、每一次辦活動的堅持，都在悄悄累積你的能量。<br><br>
+                        如果累了，歡迎隨時拿我的筆記去用，或是進 Discord 社群跟大家聊聊。我們一起把這段路走完，把生活活得熱氣騰騰！
+                    </p>
+                    <div class="pt-2 font-bold text-accent-500 text-right">— ★ 寫於考前衝刺夜 ☕</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 夥伴/學弟妹心得與見證 (Testimonials) -->
+        <section id="testimonials" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-black text-navy-900">戰友與學弟妹怎麼說 💬</h2>
+                <p class="text-slate-500 mt-2 text-sm sm:text-base">來自一起並肩作戰夥伴的真實反饋。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- 見證卡片 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        「當初自主學習完全沒方向，看了 ★ 分享的專案架構跟筆記模板後，直接點醒我！最後成果報告還拿到校內特優，太神啦～」
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 text-accent-600 font-bold flex items-center justify-center text-sm">小涵</div>
+                        <div>
+                            <div class="text-sm font-bold text-navy-900">小涵</div>
+                            <div class="text-xs text-slate-500">高一迷惘學妹</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 見證卡片 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        「★ 的錯題庫管理法救了我的物理！原本段考每次都不及格，跟著他的番茄鐘複習節奏做，學測模擬考直接進頂標！」
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-sm">阿凱</div>
+                        <div>
+                            <div class="text-sm font-bold text-navy-900">阿凱</div>
+                            <div class="text-xs text-slate-500">同班衝刺段考戰友</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 見證卡片 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        「和 ★ 一起辦跨校舞會簡直是神仙體驗！執行力超強，危機處理也很給力，有他在整個團隊都很安心！」
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-100 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 font-bold flex items-center justify-center text-sm">妍婷</div>
+                        <div>
+                            <div class="text-sm font-bold text-navy-900">妍婷</div>
+                            <div class="text-xs text-slate-500">跨校合辦活動社團社長</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 強力呼籲區 (Final CTA) -->
+        <section id="community" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="bg-accent-500 text-white rounded-3xl p-8 sm:p-14 shadow-xl shadow-accent-500/20 space-y-6">
+                <h2 class="text-3xl sm:text-4xl font-black">高中只有一次，一起把生活活得精采！🚀</h2>
+                <p class="max-w-xl mx-auto text-orange-100 text-sm sm:text-base">
+                    別再一個人悶著頭苦讀了，免費下載筆記資源，或直接加入交流群，隨時發問、互相激勵！
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+                    <a href="https://star-learning.notion.site/HighSchool-Notes-Template-2026" target="_blank" rel="noopener noreferrer" class="bg-white text-accent-600 hover:bg-orange-50 font-bold px-8 py-3.5 rounded-xl shadow transition">
+                        ⚡ 立即領取全套資源
+                    </a>
+                    <a href="https://discord.gg/highschool-study-star" target="_blank" rel="noopener noreferrer" class="bg-navy-900 hover:bg-navy-800 text-white font-bold px-8 py-3.5 rounded-xl transition">
+                        💬 加入 Discord 讀書交流群
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="bg-white border-t border-slate-200/80 py-10 mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <div class="font-black text-navy-900 text-lg flex items-center justify-center md:justify-start gap-2">
+                    <span class="bg-accent-500 text-white w-6 h-6 rounded flex items-center justify-center text-xs">★</span>
+                    <span>★ Personal Brand</span>
+                </div>
+                <p class="text-slate-500 text-xs mt-1">做一個有行動力的學習者，用熱情點亮平凡的高中生活 ✨</p>
+            </div>
+
+            <!-- 社群連結 Social Links -->
+            <div class="flex items-center gap-4 text-slate-500 text-lg">
+                <a href="https://www.instagram.com/star_study2026" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.net/@star_study2026" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition" title="Threads"><i class="fa-solid fa-at"></i></a>
+                <a href="https://github.com/star-student-dev" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/highschool-study-star" target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition" title="Discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+            <div class="text-xs text-slate-400">
+                © 2026 ★. All rights reserved. Designed for High Schoolers.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
